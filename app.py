@@ -1,3 +1,7 @@
+!pip install langchain
+!pip install PyPDF2
+!pip install transformers
+
 from transformers import AutoTokenizer, pipeline
 import streamlit as st
 from PyPDF2 import PdfReader
