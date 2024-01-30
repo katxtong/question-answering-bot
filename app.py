@@ -1,17 +1,13 @@
-!pip install langchain
-!pip install PyPDF2
-!pip install transformers
-
 from transformers import AutoTokenizer, pipeline
 import streamlit as st
 from PyPDF2 import PdfReader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.embeddings import HuggingFaceEmbeddings
 from langchain.vectorstores import FAISS
-from langchain.chains import RetrievalQA
+# from langchain.chains import RetrievalQA
 from langchain.chains.question_answering import load_qa_chain
-from langchain.document_loaders import HuggingFaceDatasetLoader
-from langchain.llms.huggingface_pipeline import HuggingFacePipeline
+# from langchain.document_loaders import HuggingFaceDatasetLoader
+# from langchain.llms.huggingface_pipeline import HuggingFacePipeline
 
 
 def main():
